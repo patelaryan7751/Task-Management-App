@@ -16,7 +16,7 @@ class AllView_Test(TestCase):
 
     def test_user_login(self):
         response = self.client.get("/user/login/")
-        self.assertEqual(response.status_code, 200)
+        self.assertEqual(response.status_code,  200)
 
     def test_user_signup(self):
         response = self.client.get("/user/signup/")
