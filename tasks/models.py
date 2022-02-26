@@ -38,3 +38,4 @@ class TaskEmail(models.Model):
     user = models.OneToOneField(
         User, on_delete=models.CASCADE, primary_key=True)
     mail_time = models.IntegerField(default=0)
+    email_prev_sent_at = models.IntegerField(default=0)
